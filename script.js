@@ -67,12 +67,98 @@ const katas = {
         printKata(7, JSON.stringify(thirdThroughFifthCities));
     },
 
+    8: function (){
+        lotrCitiesArray.splice(lotrCitiesArray.indexOf("Rohan"), 1);
 
+        printKata(8, JSON.stringify(lotrCitiesArray));
+    },
 
+    9: function (){
+        const startingIndex = lotrCitiesArray.indexOf("Dead Marshes") + 1;
+        const numberOfCitiesToDelte = lotrCitiesArray.length - startingIndex;
 
+        lotrCitiesArray.splice(startingIndex, numberOfCitiesToDelte);
 
+        printKata(9, JSON.stringify(lotrCitiesArray));
+        //if delete count is omitted, look at Splice MDN
+    },
 
+    10: function (){
+        const startingIndex = lotrCitiesArray.indexOf("Gondor") + 1;
+        lotrCitiesArray.splice(startingIndex, 0, "Rohan");
 
+        printKata(10, JSON.stringify(lotrCitiesArray));
+    },
+
+    11: function (){
+        const startingIndex = lotrCitiesArray.indexOf("Dead Marshes");
+        lotrCitiesArray.splice(startingIndex, 1, "Deadest Marshes");
+
+        printKata(11, JSON.stringify(lotrCitiesArray));
+    },
+
+    12: function (){
+        const first14Characters = bestThing.slice(0, 13 + 1);
+
+        printKata(12, JSON.stringify(first14Characters));
+    },
+
+    13: function (){
+        const last12Characters = bestThing.slice(bestThing.length - 12, bestThing.length);
+        // const last12Characters = bestThing.slice(-12); Another simpler way to write it
+        printKata(13, JSON.stringify(last12Characters));
+    },
+
+    14: function (){
+        const middle23to38Characters = bestThing.slice(23, 38);
+        printKata(14, JSON.stringify(middle23to38Characters));
+    },
+
+    15: function (){
+        const last12Characters = bestThing.substring(bestThing.length -12);
+        printKata(15, JSON.stringify(last12Characters));
+    },
+    
+    16: function (){
+        const middle23to38Characters = bestThing.substr(23, 15);
+        printKata(16, JSON.stringify(middle23to38Characters));
+    },
+
+    17: function (){
+        const onlyIndex = bestThing.indexOf("only");
+        printKata(17, JSON.stringify(onlyIndex));
+    },
+
+    18: function (){
+        const lastValue = bestThing.lastIndexOf("");
+        printKata(18, JSON.stringify(lastValue));
+    },
+
+    19: function (){
+        
+        printKata(19, JSON.stringify());
+    },
+
+    20: function (){
+        
+        printKata(20, JSON.stringify());
+    },
+    21: function (){
+        
+        printKata(21, JSON.stringify());
+    },
+    22: function (){
+        
+        printKata(22, JSON.stringify());
+    },
+    23: function (){
+        
+        printKata(23, JSON.stringify());
+    },
+    24: function (){
+        
+        printKata(24, JSON.stringify());
+    },
 
 
 
